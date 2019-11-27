@@ -10,6 +10,6 @@ Node JS Test - For Quanto
    `npm run serve` para levantar con node
 
 **OBS**: 
-- En el archivo [config/index.js](https://github.com/AngelTrinidad/quanto-test/) se puede setear las variables globales.
-- En la carpeta [docs](https://github.com/AngelTrinidad/quanto-test/) se encuentra un postman collection que tiene las pruebas de todos los
+- En el archivo [config/index.js](https://github.com/AngelTrinidad/quanto-test/blob/master/src/config/index.js) se puede setear las variables globales.
+- En la carpeta [docs](https://github.com/AngelTrinidad/quanto-test/blob/master/src/docs/) se encuentra un postman collection que tiene las pruebas de todos los
 endpoints.
