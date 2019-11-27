@@ -13,5 +13,6 @@ Node JS Test - For Quanto
 - En el archivo [config/index.js](https://github.com/AngelTrinidad/quanto-test/blob/master/src/config/index.js) se puede setear las variables globales.
 - En la carpeta [docs](https://github.com/AngelTrinidad/quanto-test/blob/master/src/docs/) se encuentra un postman collection que tiene las pruebas de todos los
 endpoints.
+- La DB mongo se encuentra alojada en la nube en mi cuenta de AtlasDB.
 
 *PD: Yo se que en realidad el modelo no respeta la filosofia no-sql, pero me parecio practico y rapido hacerlo de esta manera :)*
