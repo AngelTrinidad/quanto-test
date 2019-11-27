@@ -1,0 +1,573 @@
+{
+	"info": {
+		"_postman_id": "76ac5881-3d42-478a-98c8-153f338636e2",
+		"name": "quanto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "96trinidad@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234567",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AUTH user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "96trinidad@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234567",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODE5NzQzLCJleHAiOjE1NzQ4MjExODN9.hMSquWXH-x-OltL3EoIt1BNZnnl_PoEBHh8u_FE3U5Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "detail",
+							"value": "Categoria B",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODE5NzQzLCJleHAiOjE1NzQ4MjExODN9.hMSquWXH-x-OltL3EoIt1BNZnnl_PoEBHh8u_FE3U5Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "detail",
+							"value": "Categoria DOS",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/category/5dddd85b9ac14039f9334137",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category",
+						"5dddd85b9ac14039f9334137"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Category",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODE5NzQzLCJleHAiOjE1NzQ4MjExODN9.hMSquWXH-x-OltL3EoIt1BNZnnl_PoEBHh8u_FE3U5Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/category/5dddd85b9ac14039f9334137",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category",
+						"5dddd85b9ac14039f9334137"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Category",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODE5NzQzLCJleHAiOjE1NzQ4MjExODN9.hMSquWXH-x-OltL3EoIt1BNZnnl_PoEBHh8u_FE3U5Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODE5NzQzLCJleHAiOjE1NzQ4MjExODN9.hMSquWXH-x-OltL3EoIt1BNZnnl_PoEBHh8u_FE3U5Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "detail",
+							"value": "Cliente XXXYYY",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "5dddd9bd50641c3a6b4192f3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/client/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"client",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update client",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODE5NzQzLCJleHAiOjE1NzQ4MjExODN9.hMSquWXH-x-OltL3EoIt1BNZnnl_PoEBHh8u_FE3U5Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "detail",
+							"value": "Cliente YYY",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "5dddd9b950641c3a6b4192f2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/client/5dddda2a50641c3a6b4192f4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"client",
+						"5dddda2a50641c3a6b4192f4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete client",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODE5NzQzLCJleHAiOjE1NzQ4MjExODN9.hMSquWXH-x-OltL3EoIt1BNZnnl_PoEBHh8u_FE3U5Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "detail",
+							"value": "Cliente YYY",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "5dddd9b950641c3a6b4192f2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/client/5dddda2a50641c3a6b4192f4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"client",
+						"5dddda2a50641c3a6b4192f4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List clients",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODIxNDkzfQ.IchO83XPsCsB8tVxtTMKv_gJvuB_vc82NDWRfqNNaOM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/client?categoryId=5dddd9bd50641c3a6b4192f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"client"
+					],
+					"query": [
+						{
+							"key": "categoryId",
+							"value": "5dddd9bd50641c3a6b4192f3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create transaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODIxNDkzfQ.IchO83XPsCsB8tVxtTMKv_gJvuB_vc82NDWRfqNNaOM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "detail",
+							"value": "Transaccion nro 2",
+							"type": "text"
+						},
+						{
+							"key": "client",
+							"value": "5ddddc4a4e2b9b3d31ed75ff",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/transaction/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transaction",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update transaction",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODIxMjg0fQ.atahB5Jfy0sL8CF_-vlk0Rt6uJVqvcIG3p7GFFn-U00",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "detail",
+							"value": "Transaccion nro UNO",
+							"type": "text"
+						},
+						{
+							"key": "client",
+							"value": "5ddddc4a4e2b9b3d31ed75ff",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "consolidado",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/transaction/5ddddcf74e2b9b3d31ed7600",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transaction",
+						"5ddddcf74e2b9b3d31ed7600"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Transaction",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGRkZDc1ZmE4NTFhNTM5MjI5ZjExMmIiLCJlbWFpbCI6Ijk2dHJpbmlkYWRAZ21haWwuY29tIiwiaWF0IjoxNTc0ODIxNDkzfQ.IchO83XPsCsB8tVxtTMKv_gJvuB_vc82NDWRfqNNaOM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "detail",
+							"value": "Cliente YYY",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "5dddd9b950641c3a6b4192f2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/transaction/5ddddcf74e2b9b3d31ed7600",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transaction",
+						"5ddddcf74e2b9b3d31ed7600"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
